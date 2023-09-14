@@ -1,4 +1,4 @@
-#The challenge for speeding up your touchtyping skills
+# The challenge for speeding up your touchtyping skills
 
 - A random quote is generated from https://api.quotable.io/random
 - The timer starts
@@ -7,9 +7,10 @@
 - If he types all letters correct they are highlighted with green
 - After the user is done the new quote is being rendered
 
-###Useful code parts
+## Useful code parts
 
-####Timer with interval
+### Timer with interval
+```javascript
     let startTime;
 
     const startTimer = () => {
@@ -24,7 +25,11 @@
         return Math.floor((new Date() - startTime) / 1000)
     }
 
-####API fetch
+```
+
+### API fetch
+```javascript
     return fetch('https://api.quotable.io/random')
         .then(response => response.json())
         .then(data => data.content)
+```
