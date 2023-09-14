@@ -33,3 +33,4 @@
         .then(response => response.json())
         .then(data => data.content)
 ```
+![](screenshot.png)
